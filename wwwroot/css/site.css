@@ -1,0 +1,110 @@
+/*
+* Palette
+* Sky blue              - #9aceee
+* Medium aquamarine     - #74a9cf
+* Steel blue            - #39678d
+* Midnight blue         - #0f2b45
+* Midnight blue dark    - #040d17
+*/
+
+#main,
+#nav ul.links li.active,
+#footer {
+    background-color: #0f2b45;
+    color: #fff;
+}
+
+#nav ul.links li.active a,
+strong, b {
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, label, #footer a {
+    color: #9aceee;
+}
+
+.well {
+    background-color: #040d17;
+}
+
+.bar-alliance {
+    background-color: #013166 !important;
+}
+
+.bar-horde {
+    background-color: #ca000e !important;
+}
+
+p.highlight {
+    background: transparent url('../images/frost-highlight.png') no-repeat center center;
+    background-size: contain;
+    height: 5em;
+    width: auto;
+    padding: 1.4em 6em;
+}
+
+input[type="text"], input[type="password"], input[type="email"], select, textarea {
+    border-color: #39678d;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"], button, .button {
+    box-shadow: inset 0 0 0 2px #9aceee;
+    color: #9aceee !important;
+}
+
+input[type="submit"].special, input[type="reset"].special, input[type="button"].special, button.special, .button.special {
+    background-color: #39678d;
+    box-shadow: none;
+    color: #fff !important;
+}
+
+#nav {
+    background-color: rgba(4, 13, 23, 0.175);
+}
+
+#nav-decorator {
+    width: 100%;
+}
+
+#nav-decorator img {
+    position: absolute;
+    top: 20vw;
+    left: 10vw;
+    max-width: 40%;
+    max-height: 40%;
+}
+
+#copyright {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.text-center, .text-center p {
+    text-align: center !important;
+}
+
+#features {
+    text-align: center;
+}
+
+#features p {
+    padding: 0 5px;
+}
+
+.icon.major {
+    border-radius: 100%;
+    line-height: 6rem;
+    background-color: #39678d;
+    width: 6rem;
+    height: 6rem;
+    margin: 0 0 2em 0;
+    display: inline-block;
+    text-align: center;
+}
+
+.icon.major:before {
+    font-size: 2.25em;
+}
+
+.row {
+    padding-top: 10vh;
+}

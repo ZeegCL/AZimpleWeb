@@ -1,0 +1,34 @@
+@using Microsoft.Extensions.Configuration;
+@inject IConfiguration configuration;
+@{
+    ViewData["SiteName"] = configuration.GetSection("Server")["Name"];
+    ViewData["Description"] = configuration.GetSection("Server")["Description"];
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>@ViewData["Title"] | @ViewData["SiteName"]</title>
+    <base href="~/" />
+
+    <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/template/assets/css/main.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <noscript><link rel="stylesheet" href="~/template/assets/css/noscript.css" /></noscript>
+</head>
+<body  class="is-loading">
+    @RenderBody()
+
+    <!-- Scripts -->
+    <script src="~/template/assets/js/jquery.min.js"></script>
+    <script src="~/template/assets/js/jquery.scrollex.min.js"></script>
+    <script src="~/template/assets/js/jquery.scrolly.min.js"></script>
+    <script src="~/template/assets/js/skel.min.js"></script>
+    <script src="~/template/assets/js/util.js"></script>
+    <script src="~/template/assets/js/main.js"></script>
+    <script src="~/dist/vendor.js" asp-append-version="true"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
